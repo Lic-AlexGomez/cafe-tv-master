@@ -79,6 +79,7 @@ header .textos h3 {
 .main {
 	background: url('../img/bg-textura.png');
 	background-repeat: repeat;
+	
 }
 
 .main .acerca-de .contenedor {
@@ -108,9 +109,9 @@ header .textos h3 {
 	padding: 40px;
 	width: 50%;
 	position: relative;
-	top:500px;
+	top:330px;
+	left: 296px;
 	z-index: 1;
-	float: right;
 	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
 }
 
@@ -124,9 +125,29 @@ header .textos h3 {
 	line-height: 28px;
 	margin-bottom: 15px;
 }
+/*Movil*/ 
+@media (max-width: 575.98px)and (orientation:portrait) { 
+	.main .acerca-de .contenedor {
+		overflow: visible;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	.main .acerca-de article {
+		
+		top:0;
+		left: 0;
+		width: 100%;
+		
+	}
 
+}.main .menu {
+	padding-top: 200px;
+	margin-bottom: 50px;
+}
+/*Fin Movil*/
 .main .menu {
-	padding-top: 570px;
+	padding-top: 400px;
 	margin-bottom: 50px;
 }
 
@@ -254,9 +275,10 @@ header .textos h3 {
 }
 
 .main .mapa iframe {
-	width: 100%;
-	max-height: 600px;
-}
+	width: 116%;
+	overflow:visible;
+	max-height: 359px;
+  }
 
 /* ----- ----- FOOTER ----- ----- */
 footer {
@@ -310,7 +332,7 @@ footer .copyright {
 	}
 
 	.main .menu {
-		padding-top: 300px;
+		padding-top: 30px;
 	}
 
 	.main .menu article {
@@ -322,8 +344,11 @@ footer .copyright {
 	}
 
 	.main .mapa {
-		width: 80%;
+		width: 100%;
 		margin: auto;
+	}
+	#btn-ubicacion{
+		margin-left: 50px;
 	}
 }
 
