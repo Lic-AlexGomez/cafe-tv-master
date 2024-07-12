@@ -84,6 +84,9 @@ header .textos h3 {
 .main .acerca-de .contenedor {
 	overflow: visible;
 	position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .main .acerca-de .foto {
